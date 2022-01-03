@@ -19,9 +19,9 @@ PL/SQL is used for implementing the last step (Effort Estimation) of our approac
 
 3)  Update following properties in application.properties file and Run as Java application the class "DBDependencyAnalyzerApplication".
   
-    *spring.datasource.username="?" 
-    *spring.datasource.password="?" 
-    *spring.datasource.url="?"
+    - spring.datasource.username
+    - spring.datasource.password 
+    - spring.datasource.url
   
   Please note that this process can take several hours.
   
