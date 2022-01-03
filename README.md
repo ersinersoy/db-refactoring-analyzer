@@ -17,16 +17,15 @@ PL/SQL is used for implementing the last step (Effort Estimation) of our approac
     
 2)  Connect  database  via  SQL  PLUS  with  :username  and run "dbsetup.sql" to create the necessary table objects for storing analysis results.
 
-3)  Run   "dbDependencyAnalyzer-1.5.0.jar"   with   DBMSconnection parameters (:username,:password and URL) as follows.
+3)  Update following properties in application.properties file and Run as Java application the class "DBDependencyAnalyzerApplication".
   
-    java -jar dbDependencyAnalyzer-1.5.0.jar 
     --spring.datasource.username="?" 
     --spring.datasource.password="?" 
     --spring.datasource.url="?"
   
   Please note that this process can take several hours.
   
-4)  Update iRunId and iSchema variables taking place in the file named “dbsetup.sql”.iRunI dis a unique ID, which is  automatically  generated  by  the  tool.  It  is  equal  to  1 for the first run. Its value can be retrieved from the table named "DEPENDENCY_RESULT_MAIN" for the sub-sequent runs.iSchema is the name of the schema that is considered to be refactored.
+4)  Update iRunId and iSchema variables taking place in the file named “dbsetup.sql”. iRunId is a unique ID, which is  automatically  generated  by  the  tool.  It  is  equal  to  1 for the first run. Its value can be retrieved from the table named "DEPENDENCY_RESULT_MAIN" for the sub-sequent runs. iSchema is the name of the schema that is considered to be refactored.
 
 5)  Run the updated "dbsetup.sql" file via SQL PLUS
 
