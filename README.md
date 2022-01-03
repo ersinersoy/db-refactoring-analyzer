@@ -14,7 +14,7 @@ PL/SQL is used for implementing the last step (Effort Estimation) of our approac
 
     CREATE USER :username IDENTIFIEDBY :password;GRANT CONNECT, RESOURCE, DBATO :username;
     
-2)  Connect  database  via  SQL  PLUS  with  :username  and run "dbsetup.sql" to create the necessary table objects for storing analysis results.
+2)  Connect  database  via  SQL  PLUS  with  :username  and run "db_setup.sql" to create the necessary table objects for storing analysis results.
 
 3)  Update following properties in application.properties file and Run as Java application the class "DBDependencyAnalyzerApplication".
   
