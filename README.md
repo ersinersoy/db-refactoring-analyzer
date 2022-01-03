@@ -1,6 +1,6 @@
  # About Repository
  
- This repository is created to share source codes of Effort Estimation for Architectural Refactoring of Data Tier Software study
+ This repository is created to share source codes of study, Effort Estimation for Architectural Refactoring of Data Tier Software.
  
  # Build Instructions
  
