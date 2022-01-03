@@ -19,10 +19,10 @@ PL/SQL is used for implementing the last step (Effort Estimation) of our approac
 
 3)  Run   "dbDependencyAnalyzer-1.5.0.jar"   with   DBMSconnection parameters (:username,:password and URL) as follows.
   
-  java -jar dbDependencyAnalyzer-1.5.0.jar 
-  --spring.datasource.username="?" 
-  --spring.datasource.password="?" 
-  --spring.datasource.url="?"
+    java -jar dbDependencyAnalyzer-1.5.0.jar 
+    --spring.datasource.username="?" 
+    --spring.datasource.password="?" 
+    --spring.datasource.url="?"
   
   Please note that this process can take several hours.
   
