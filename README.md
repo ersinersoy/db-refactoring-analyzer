@@ -12,7 +12,7 @@ PL/SQL is used for implementing the Effort Estimation. The file named "effort_es
 
 1)  Create a database user and required privileges by using following  commands  (Skip  this  step  if  you  have  anexisting one)
 
-    CREATE USER :username IDENTIFIEDBY :password;GRANT CONNECT, RESOURCE, DBATO :username;
+    ```CREATE USER :username IDENTIFIEDBY :password;GRANT CONNECT, RESOURCE, DBATO :username```
     
 2)  Connect  database  via  SQL  PLUS  with  :username  and run "db_setup.sql" to create the necessary table objects for storing analysis results.
 
@@ -30,6 +30,6 @@ PL/SQL is used for implementing the Effort Estimation. The file named "effort_es
 
 6)  Predicted effort estimations can be obtained by executing the following SQL query.
 
-      SELECT SCHEMA, EFFORT_1 CASE_a,EFFORT_2 Case_b FROM DEPENDENCY_RESULT_EST WHERE NRUNID=?
+      ```SELECT SCHEMA, EFFORT_1 CASE_a,EFFORT_2 Case_b FROM DEPENDENCY_RESULT_EST WHERE NRUNID=?```
  
  
